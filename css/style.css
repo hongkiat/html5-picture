@@ -1,0 +1,74 @@
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f3f3f3;
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+.demo-wrapper {
+	width: 100%;
+	max-width: 680px;
+	margin: 10px auto;
+	padding: 0 20px;
+}
+.demo-wrapper .instruction {
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 50px;
+	background-color: #f39c12;
+	color: #fff;
+	border-radius: 3px;
+}
+.demo-wrapper figure {	
+	height: auto;
+}
+.demo-wrapper figure img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 3px;
+}
+.demo-wrapper .post-thumbnail,
+.demo-wrapper .post-summary {
+	float: left;
+}
+.demo-wrapper .post-thumbnail  {
+	width: 50%;
+	padding-right: 2%;
+}
+.demo-wrapper .post-summary  {
+	padding-left: 2%;
+	width: 50%;
+}
+.demo-wrapper .post-summary p {
+	margin-top: 0;
+	line-height: 1.5em;
+}

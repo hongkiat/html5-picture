@@ -1,0 +1,43 @@
+<div html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Using Picture Element</title>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/picturefill.js"></script>
+
+<script src="../_nav/js/nav.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- nav script -->
+<div class="demo-meta">
+	<h1 class="demo-title">Using Picture Element</h1>
+	<p class="demo-desc">Responsive image focus direction with Picturefill.</p>
+</div>
+
+<!-- demo content -->
+<div class="demo-wrapper">
+	<p class="instruction">Resize your browser <em>viewport</em>.</p>
+	<div class="post cf">
+		<figure class="post-thumbnail col">
+			<picture>
+				<source srcset="img/person-xsmall.jpg" media="(max-width: 480px)">
+				<source srcset="img/person-small.jpg" media="(max-width: 640px)">
+				<source srcset="img/person-med.jpg">
+				<img srcset="img/person-med.jpg" alt="">
+			</picture>
+		</figure>
+		<div class="post-summary col">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, commodi, ipsum animi non quisquam tempore assumenda praesentium nemo molestias quae sapiente delectus esse rem eius dolorum hic nisi ipsa laudantium.</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
